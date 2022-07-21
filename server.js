@@ -1,5 +1,5 @@
 const { WebSocketServer } = require('ws')
-const WS_PORT = 8088;
+const WS_PORT = process.env.PORT || 8088;
 const wss = new WebSocketServer({
     perMessageDeflate: false,
     port: WS_PORT
